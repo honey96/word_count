@@ -3,12 +3,14 @@
 <h2><b> orignal text: </b> </h2>
 {{ parabox }}
 
+<h3> <b> Word Frequency </b></h3>
+
+
 {% for i,j in sorted_words %}
 
-{{ i }}
+{{ i }} - {{ j }}
 
-<br> </br>
-{{ j }}
+<br>
 
 {% endfor %}
 
