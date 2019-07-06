@@ -1,0 +1,16 @@
+<h1><b> There are total {{ count }} words in the text ...  </h1>
+
+<h2><b> orignal text: </b> </h2>
+{{ parabox }}
+
+{% for i,j in sorted_words %}
+
+{{ i }}
+
+<br> </br>
+{{ j }}
+
+{% endfor %}
+
+
+<a href= "{% url 'start' %}"> Start again </a>
